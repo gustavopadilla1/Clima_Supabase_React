@@ -1,40 +1,13 @@
-import { CardContent,Card, CardHeader,CardActions, Avatar, Button } from '@mui/material';
-import { red } from '@mui/material/colors';
-import IconButton  from '@mui/material/IconButton';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShareIcon from '@mui/icons-material/Share';
-import Clima from '../UpdateImgClima';
+import { CardContent,Card, CardActions } from '@mui/material';
 import React from 'react';
+
 
 const WeatherInfo = props => {
 
     console.log(props)
     return (      
-        <Card sx={{ maxWidth: 345 }} >
-            <CardHeader sx={{ maxWidth: 345 }}
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                   <Clima/>
-
-          </Avatar>
-        }
-        action={
-            <IconButton aria-label="settings">
-              <MoreVertIcon />
-            </IconButton>
-          }
-          title="Bienvenido"
-          subheader="September 14, 2016"
-        />
-       <Clima/>
-        
-        {/* <CardMedia sx={{ maxWidth: 345 }}
-        component="img"
-        height="194"
-        image="https://www.liderempresarial.com/wp-content/uploads/2019/11/200533-Aguascalientes.jpg"
-        alt="Paella dish"
-      /> */}
+        <Card sx={{ maxWidth: 345 }} >       
+                
 
     <CardContent variant="outlined" sx={{ maxWidth: 345 }}>
       {
@@ -57,10 +30,10 @@ const WeatherInfo = props => {
                         props.humidity &&
                         <p><i className="fas fa-water"></i> Humidity: {props.humidity}</p>
                     }
-                    {
+                    {/* {
                         props.wind_speed &&
                         <p><i className="fas fa-wind"></i> Wind Speed: {props.wind_speed}</p>
-                    }
+                    } */}
                 </div>
                 :
                 <div className="card card-body mt-2 text-center">
@@ -69,22 +42,9 @@ const WeatherInfo = props => {
             }
             
       </CardContent>
-      <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>             
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
-
-        <Button>               
-          Info          
-        </Button>
-       
-
-        
+      <CardActions disableSpacing>               
       </CardActions>
-  
+      
         
     </Card>
         // <div>

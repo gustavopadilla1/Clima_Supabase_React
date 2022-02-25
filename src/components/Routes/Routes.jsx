@@ -6,7 +6,6 @@ import Perfiles from "../Perfiles";
 import Home from "../Home";
 
 
-
 export default function Rotas({ session }) {
     const [, setLoading] = useState(true);
     const [, setUsername] = useState(null);

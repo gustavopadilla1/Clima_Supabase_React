@@ -3,6 +3,7 @@ import AppBar from '../../components/AppBar';
 import WeatherForm from '../Formulario';
 import WeatherInfo from '../Card';
 import { WEATHER_KEY } from '../../key';
+import InfoClima from '../InfoClima';
 
 class Home extends Component {
 
@@ -58,6 +59,8 @@ class Home extends Component {
                     />
                     <br/>
                     <WeatherInfo {...this.state} />
+                    <InfoClima  {...this.state}/>
+
                 </div>
             </div>
         </div>
