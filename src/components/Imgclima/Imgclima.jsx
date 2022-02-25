@@ -56,7 +56,7 @@ export default function Avatar({ url, size, onUpload }) {
     <div>
       {Imgclima_url ? (
         <img
-          src={Imgclima_url ?? "https://www.emsevilla.es/wp-content/uploads/2020/10/no-image-1.png"}
+          src={Imgclima_url }
           alt="Imgclima_url"
           className="avatar image"
           style={{ height: size, width: size }}

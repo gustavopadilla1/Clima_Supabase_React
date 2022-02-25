@@ -49,7 +49,8 @@ const Navbar = () => {
 
                         <Tooltip title="Open settings">
                             <IconButton sx={{ p: 0 }}>
-                                <Avatar alt="G" src="/static/images/avatar/2.jpg" />
+                                <Avatar alt="G">                                
+                                </Avatar>                            
 
                                 {/* <ImgPerfiles            
                 url={imgperfiles_url}
