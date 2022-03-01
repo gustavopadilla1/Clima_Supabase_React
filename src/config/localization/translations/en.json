@@ -1,0 +1,30 @@
+{"welcome": "Welcome",
+    
+    "Home":"Home",
+    "Exit":"Exit",
+    "Profile":"Profile",
+    "Change language":"Change language",
+    "Spanish":"Spanish",
+    "English":"English", 
+    
+    "Log in":"Log in",
+    "log in via the magic link with your email below":"log in via the magic link with your email below",
+    "Send access link":"Send access link",
+    "enter your email":"enter your email",
+
+    "Your City Name":"Your City Name",
+    "City":"City",
+    "Your Country Name":"Your Country Name",
+    "Country":"Country",
+    "search": "Search",
+
+    "Location":"Location",
+    "Temperature":"Temperature",
+    "Humidity": "Humidity",
+    "Wind Speed":"Wind Speed"
+
+
+
+
+
+}

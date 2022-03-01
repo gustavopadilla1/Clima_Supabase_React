@@ -1,10 +1,21 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Avatar, Tooltip, Box, IconButton, Button } from '@mui/material';
 import { supabase } from "../../config/supabaseClient";
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; 
+import { useTranslation } from "react-i18next";
+import{useEffect} from 'react';
+
 
 
 const Navbar = () => {    
+    useEffect(() => {
+        changeLaguage();
+    },);    
+      const { i18n, t } = useTranslation();
+      
+      const changeLaguage = (language) => {
+        i18n.changeLanguage(language);
+      };
 
     return (
         
@@ -27,7 +38,7 @@ const Navbar = () => {
                         </IconButton>
                         <Typography variant='h6' component="div" sx={{ flexGrow: 1 }}>
                         <Link to="/">
-                        Home
+                         {t("Home")}
                         </Link>
                         </Typography>
 
@@ -37,12 +48,12 @@ const Navbar = () => {
                         </Button>
 
                         <Button color="inherit" onClick={() => supabase.auth.signOut()}>                        
-                        Salir
+                        {t("Exit")}
                     </Button>
                                               
                             <Button color="inherit" >
                                 <Link to="/Perfiles">                                
-                                Perfil
+                                {t("Profile")}
                                 </Link>
                                 </Button>
                         

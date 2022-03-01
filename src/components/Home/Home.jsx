@@ -14,6 +14,7 @@ class Home extends Component {
         wind_speed: 0,
         city: '',
         country: '',
+        
         error: null
     };
 
@@ -46,13 +47,16 @@ class Home extends Component {
         }
 
     }
+    
 
     render() {
+        
         return <div className="container p-4">
             <div className="row">
                 <div className="col-md-6 mx-auto">
 
                 <AppBar/>
+
 
                     <WeatherForm
                         getWeather={this.getWeather}

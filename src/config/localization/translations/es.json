@@ -1,0 +1,27 @@
+{"welcome": "Bienvenido",
+    
+    "Home": "Casa",
+    "Exit":"Salir",
+    "Profile":"Perfil",
+    "Change language":"Cambiar idioma", 
+    "Spanish":"Español",
+    "English":"Ingles",
+
+    "Log in":"Iniciar sesión",
+    "log in via the magic link with your email below":"inicie sesión a través del enlace mágico con su correo electrónico a continuación",
+    "Send access link":"Enviar enlace de acceso",
+    "enter your email": "ingresa tu correo electrónico",
+
+    "Your City Name":"Nombre de tu ciudad",
+    "City":"Ciudad",
+    "Your Country Name":"Nombre de tu Pais",
+    "Country":"Pais",
+    "search":"Buscar",
+    
+    "Location":"Ubicacion",
+    "Temperature":"Temperatura",
+    "Humidity":"Humidity",
+    "Wind Speed": "Velocidad del Viento"
+
+
+}
